@@ -1,0 +1,9 @@
+D:\Work\Github\EPS\EPS.Data\bin\Debug\Framework.dll
+D:\Work\Github\EPS\EPS.Data\bin\Debug\Framework.pdb
+D:\Work\Github\EPS\EPS.Data\obj\Debug\Framework.dll
+D:\Work\Github\EPS\EPS.Data\obj\Debug\Framework.pdb
+D:\Work\Github\EPS\EPS.Data\obj\Debug\Framework.Data.csprojResolveAssemblyReference.cache
+D:\Work\Github\EPS PostgreSQL\EPS.Data\bin\Debug\Framework.dll
+D:\Work\Github\EPS PostgreSQL\EPS.Data\bin\Debug\Framework.pdb
+D:\Work\Github\EPS PostgreSQL\EPS.Data\obj\Debug\Framework.dll
+D:\Work\Github\EPS PostgreSQL\EPS.Data\obj\Debug\Framework.pdb

@@ -1,0 +1,29 @@
+﻿@model NewsEntry
+@{
+    var time = Model.CreatedTime.HasValue ? Model.CreatedTime.Value.ToString("yyyy-MM-dd HH:mm") : DateTime.Now.ToString("yyyy-MM-dd HH:mm");                
+}
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        @Html.Action("SideMenu", "Home")
+    </div>
+
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        @Html.Action("Breadcrumb", "Home")
+        <div class="news_main">
+            <div class="news_title">@Model.Title</div>
+            <div class="news_from">
+                @time @Html.Lang("From :")<a href="#">@Model.Source</a>
+            </div>
+            @if (!string.IsNullOrEmpty(Model.Brief))
+            {
+                <div class="news_desc">
+                    @Model.Brief
+                </div>
+            }
+            <div class="news_content">
+                @Html.Raw(Model.Content)
+                <div class="author">@Html.Lang("Author :") @Model.Author</div>
+            </div>
+        </div>
+    </div>
+</div>

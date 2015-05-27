@@ -1,0 +1,506 @@
+﻿[
+    {
+        "Key": "The {0} field is required.",
+        "Value": "{0}字段是必须的。"
+    },
+    {
+        "Key": "Display As Module/Menu",
+        "Value": "是否作为目录显示"
+    },
+    {
+        "Key": "Relating Actions to Module",
+        "Value": "关联权限类型到目录"
+    },
+    {
+        "Key": "Display As Website Front Menu",
+        "Value": "是否作为网站前台目录"
+    },
+    {
+        "Key": "Make it as a article type?",
+        "Value": "是否作为网站前台发布的文章类型？"
+    },
+    {
+        "Key": "Cancel",
+        "Value": "取  消"
+    },
+    {
+        "Key": "Save",
+        "Value": "确  认"
+    },
+    {
+        "Key": "Setup",
+        "Value": "设  置"
+    },
+    {
+        "Key": "Module List",
+        "Value": "模块列表"
+    },
+    {
+        "Key": "Root",
+        "Value": "根节点"
+    },
+    {
+        "Key": "URL of Admin",
+        "Value": "网站后台URL地址"
+    },
+    {
+        "Key": "URL of Website",
+        "Value": "网站前台URL地址"
+    },
+    {
+        "Key": "Title",
+        "Value": "标题"
+    },
+    {
+        "Key": "Author",
+        "Value": "作者"
+    },
+    {
+        "Key": "Source",
+        "Value": "来源"
+    },
+    {
+        "Key": "Brief",
+        "Value": "简述"
+    },
+    {
+        "Key": "Content",
+        "Value": "内容"
+    },
+    {
+        "Key": "Count",
+        "Value": "点击次数"
+    },
+    {
+        "Key": "About Us",
+        "Value": "关于我们"
+    },
+    {
+        "Key": "Please select one",
+        "Value": "请选择一个"
+    },
+    {
+        "Key": "Record(s) created.",
+        "Value": "新增记录成功。"
+    },
+    {
+        "Key": "{0} created.",
+        "Value": "新增{0}到数据库成功。"
+    },
+    {
+        "Key": "{0} updated.",
+        "Value": "更新{0}到数据库成功。"
+    },
+    {
+        "Key": "Record(s) updated.",
+        "Value": "更新记录成功。"
+    },
+    {
+        "Key": "You selected record(s) deleted.",
+        "Value": "您选择的记录已删除。"
+    },
+    {
+        "Key": "Record(s) saved.",
+        "Value": "记录已被保存。"
+    },
+    {
+        "Key": "News List",
+        "Value": "新闻列表"
+    },
+    {
+        "Key": "Add",
+        "Value": "新增"
+    },
+    {
+        "Key": "Edit",
+        "Value": "编辑"
+    },
+    {
+        "Key": "Delete",
+        "Value": "删除"
+    },
+    {
+        "Key": "New News",
+        "Value": "新增新闻"
+    },
+    {
+        "Key": "Type",
+        "Value": "文章类型"
+    },
+    {
+        "Key": "The field {0} must be a number.",
+        "Value": "{0}字段必须是数字。"
+    },
+    {
+        "Key": "Edit News",
+        "Value": "编辑新闻"
+    },
+    {
+        "Key": "Category",
+        "Value": "文章类型"
+    },
+    {
+        "Key": "Created By",
+        "Value": "创建者"
+    },
+    {
+        "Key": "Created Time",
+        "Value": "创建时间"
+    },
+    {
+        "Key": "All Types",
+        "Value": "所有类型"
+    },
+    {
+        "Key": "Please enter title",
+        "Value": "请输入标题"
+    },
+    {
+        "Key": "Submit",
+        "Value": "查询"
+    },
+    {
+        "Key": "Action List",
+        "Value": "权限类型列表"
+    },
+    {
+        "Key": "Role List",
+        "Value": "角色列表"
+    },
+    {
+        "Key": "Role Code",
+        "Value": "角色编码"
+    },
+    {
+        "Key": "Display Name",
+        "Value": "显示名"
+    },
+    {
+        "Key": "Sequence",
+        "Value": "序列"
+    },
+    {
+        "Key": "Description",
+        "Value": "描述"
+    },
+    {
+        "Key": "{0} already used, please select another.",
+        "Value": "{0}已经被使用，请换一个。"
+    },
+    {
+        "Key": "Action Code",
+        "Value": "角色编码"
+    },
+    {
+        "Key": "User List",
+        "Value": "用户列表"
+    },
+    {
+        "Key": "All Options",
+        "Value": "所有选项"
+    },
+    {
+        "Key": "User Name",
+        "Value": "用户名"
+    },
+    {
+        "Key": "First Name",
+        "Value": "姓氏"
+    },
+    {
+        "Key": "Last Name",
+        "Value": "名字"
+    },
+    {
+        "Key": "Search...",
+        "Value": "查找..."
+    },
+    {
+        "Key": "Please enter {0} between {1} and {2} characters long.",
+        "Value": "{0}的长度必须是{1}到{2}个字符长度。"
+    },
+    {
+        "Key": "{0} and {1} does not match.",
+        "Value": "{0}和{1}不相匹配。"
+    },
+    {
+        "Key": "New User",
+        "Value": "新增用户"
+    },
+    {
+        "Key": "Password",
+        "Value": "密码"
+    },
+    {
+        "Key": "Reenter Password",
+        "Value": "确认密码"
+    },
+    {
+        "Key": "Assigned Roles to User",
+        "Value": "给用户指定角色"
+    },
+    {
+        "Key": "Edit User",
+        "Value": "编辑用户"
+    },
+    {
+        "Key": "If you would like to change the password, please enter it. Otherwise leave it blank.",
+        "Value": "如果你想要更改密码，请输入你要更改的密码，否则请留空。"
+    },
+    {
+        "Key": "Edit Module",
+        "Value": "编辑模块"
+    },
+    {
+        "Key": "New Module",
+        "Value": "编辑模块"
+    },
+    {
+        "Key": "Module Code",
+        "Value": "模块编码"
+    },
+    {
+        "Key": "Class Name",
+        "Value": "样式名称"
+    },
+    {
+        "Key": "Parent Name",
+        "Value": "父名称"
+    },
+    {
+        "Key": "Role's Rights",
+        "Value": "角色权限"
+    },
+    {
+        "Key": "Role Name",
+        "Value": "角色名称"
+    },
+    {
+        "Key": "Check All",
+        "Value": "选择所有"
+    },
+    {
+        "Key": "Uncheck All",
+        "Value": "反选所有"
+    },
+    {
+        "Key": "Module Name",
+        "Value": "模块名称"
+    },
+    {
+        "Key": "Right List",
+        "Value": "权限列表"
+    },
+    {
+        "Key": "You do not have set actions for the module.",
+        "Value": "你还没有关联权限信息到该模块。"
+    },
+    {
+        "Key": "From :",
+        "Value": "来源："
+    },
+    {
+        "Key": "Hits :",
+        "Value": "点击数："
+    },
+    {
+        "Key": "Author :",
+        "Value": "作者："
+    },
+    {
+        "Key": "Next",
+        "Value": "下一步"
+    },
+    {
+        "Key": "Case List",
+        "Value": "案例列表"
+    },
+    {
+        "Key": "New Case",
+        "Value": "新增案例"
+    },
+    {
+        "Key": "Edit Case",
+        "Value": "编辑案例"
+    },
+    {
+        "Key": "Photos View",
+        "Value": "图片展示"
+    },
+    {
+        "Key": "Upload",
+        "Value": "上传文件"
+    },
+    {
+        "Key": "Select record(s) to be deleted.",
+        "Value": "您还没有选择删除项，请选择。"
+    },
+    {
+        "Key": "Are you sure you want to delete the record(s)?",
+        "Value": "您确认想删除这些选项？"
+    },
+    {
+        "Key": "Please select a record to edit.",
+        "Value": "请选择一条需要编辑的记录。"
+    },
+    {
+        "Key": "Select record to be edited.",
+        "Value": "请选择需要编辑的记录。"
+    },
+    {
+        "Key": "Please select a record to edit.",
+        "Value": "请选择一条需要编辑的记录。"
+    },
+    {
+        "Key": "Confirmation",
+        "Value": "确认信息"
+    },
+    {
+        "Key": "Information",
+        "Value": "信息"
+    },
+    {
+        "Key": "Edit Description",
+        "Value": "编辑描述"
+    },
+    {
+        "Key": "Product List",
+        "Value": "产品列表"
+    },
+    {
+        "Key": "New Product",
+        "Value": "新增产品"
+    },
+    {
+        "Key": "Edit Product",
+        "Value": "编辑产品"
+    },
+    {
+        "Key": "Publish to home page",
+        "Value": "发布到首页"
+    },
+    {
+        "Key": "Please select a valid photo for {0}.",
+        "Value": "请为{0}选择一个有效的图片上传。"
+    },
+    {
+        "Key": "{0} size is too large.",
+        "Value": "{0}文件太大，请重新上传。"
+    },
+    {
+        "Key": "Company Name",
+        "Value": "公司名称"
+    },
+    {
+        "Key": "Website URL",
+        "Value": "网站URL"
+    },
+    {
+        "Key": "Address",
+        "Value": "地址"
+    },
+    {
+        "Key": "Telphone",
+        "Value": "联系电话"
+    },
+    {
+        "Key": "Fax",
+        "Value": "传真"
+    },
+    {
+        "Key": "ICP",
+        "Value": "备案号"
+    },
+    {
+        "Key": "Postal Code",
+        "Value": "邮编"
+    },
+    {
+        "Key": "Banner Image",
+        "Value": "幻灯片"
+    },
+    {
+        "Key": "Page Size",
+        "Value": "每页记录数"
+    },
+    {
+        "Key": "Configuration",
+        "Value": "网站配置"
+    },
+    {
+        "Key": "Dashboard",
+        "Value": "网站信息概要"
+    },
+    {
+        "Key": "Login",
+        "Value": "登录"
+    },
+    {
+        "Key": "User Name",
+        "Value": "用户名"
+    },
+    {
+        "Key": "Remember me 7 days",
+        "Value": "记住我一周"
+    },
+    {
+        "Key": "Log in",
+        "Value": "登录"
+    },
+    {
+        "Key": "System Management",
+        "Value": "系统管理"
+    },
+    {
+        "Key": "Grade",
+        "Value": "权限级别指数"
+    },
+    {
+        "Key": "Welcome,",
+        "Value": "欢迎，"
+    },
+    {
+        "Key": "Total Users",
+        "Value": "总用户数"
+    },
+    {
+        "Key": "Total News",
+        "Value": "总新闻数"
+    },
+    {
+        "Key": "Total Cases",
+        "Value": "总案例数"
+    },
+    {
+        "Key": "Total Products",
+        "Value": "总产品数"
+    },
+    {
+        "Key": "System Information",
+        "Value": "系统信息"
+    },
+    {
+        "Key": "System Version",
+        "Value": "系统版本"
+    },
+    {
+        "Key": "Platform Version",
+        "Value": "平台版本"
+    },
+    {
+        "Key": "Website/IP",
+        "Value": "域名/IP"
+    },
+    {
+        "Key": "Server Engine",
+        "Value": "服务器解析引擎"
+    },
+    {
+        "Key": "Runtime of the system",
+        "Value": "系统运行时间"
+    },
+    {
+        "Key": "Current Time",
+        "Value": "当前时间"
+    }
+]

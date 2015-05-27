@@ -1,0 +1,40 @@
+﻿@model ModuleEntry
+@{
+    Layout = null;
+}
+@helper SubMenu(ModuleEntry model)
+{
+    <ul class="dropdown-menu">
+        @foreach (var item in model.Children)
+        {
+            var url = string.IsNullOrEmpty(item.FrontUrl) ? "#" : Url.Content(item.FrontUrl) + "?ModuleId=" + item.ModuleId + "&ParentId="+ item.ParentId;
+            <li><a href="@url">@item.DisplayName</a></li>
+        }
+    </ul>
+}
+
+<nav id="navbar" class="navbar-custom collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-nav-custom">
+        @if (Model.Children != null && Model.Children.Count > 0)
+        {
+            foreach (var item in Model.Children)
+            {
+                var url = string.IsNullOrEmpty(item.FrontUrl) ? "#" : Url.Content(item.FrontUrl);
+                if (item.Children.Count > 0)
+                {
+                    <li class="dropdown">
+                        <a href="@url" data-toggle="dropdown" class="dropdown-toggle">
+                            @item.DisplayName <b class="caret"></b>
+                        </a>
+                        @SubMenu(item)
+                    </li>
+
+                }
+                else
+                {
+                    <li><a href="@url">@item.DisplayName</a></li>
+                }
+            }
+        }
+    </ul>
+</nav>

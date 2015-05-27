@@ -1,0 +1,31 @@
+﻿@model IEnumerable<NewsEntry>
+@{
+    string url = Url.Content("~/News/Index?ModuleId=" + ViewBag.ModuleId + "&ParentId=" + ViewBag.ParentId + "&page=");
+}
+
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        @Html.Action("SideMenu", "Home")
+    </div>
+
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        @Html.Action("Breadcrumb", "Home")
+        <div class="news_main">
+            <div class="news_list">
+                <div class="new_row_list">
+                    <dl>
+                        @foreach (var item in Model)
+                        {
+                            var time = item.CreatedTime.HasValue ? item.CreatedTime.Value.ToString("yyyy-MM-dd") : DateTime.Now.ToString("yyyy-MM-dd");
+                            <dd>
+                                <span>[@time]</span>
+                                <a href="~/News/Details/@item.NewsId?ModuleId=@item.ModuleId&ParentId=@item.ParentId" title="@item.Title">@item.Title</a>
+                            </dd>
+                        }
+                    </dl>
+                </div>
+            </div>
+            @Html.Pager(ViewBag.PageModel as PageEntry, url)
+        </div>
+    </div>
+</div>

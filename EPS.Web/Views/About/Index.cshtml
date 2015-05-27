@@ -1,0 +1,16 @@
+﻿@model NewsEntry
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        @Html.Action("SideMenu", "Home")
+    </div>
+
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        @Html.Action("Breadcrumb", "Home")
+        <div class="news_main">
+            <div class="news_content">
+                @Html.Raw( Model == null ? "" : Model.Content)
+            </div>
+        </div>
+    </div>
+
+</div>

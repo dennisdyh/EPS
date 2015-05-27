@@ -1,0 +1,32 @@
+﻿@model IEnumerable<NewsEntry>
+@{
+    string url = Url.Content("~/Cases/Index?ModuleId=" + ViewBag.ModuleId + "&ParentId=" + ViewBag.ParentId + "&page=");
+}
+
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        @Html.Action("SideMenu", "Home")
+    </div>
+
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+        @Html.Action("Breadcrumb", "Home")
+        <div class="content">
+            <div class="row" id="thumbs">
+                @foreach (var item in Model)
+                {
+                    <div class="col-xs-12 col-sm-6 col-md-4 imgbox">
+                        <div class="thumbnail">
+                            <a href="~/Cases/Details/@item.NewsId?ModuleId=@item.ModuleId&ParentId=@item.ParentId">
+                                <img data-src="holder.js/300x300" src="@Url.Content(item.Brief)">
+                            </a>
+                            <div class="caption">
+                                <p class="caption-content">@item.Content</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            @Html.Pager(ViewBag.PageModel as PageEntry, url)
+        </div>
+    </div>
+</div>

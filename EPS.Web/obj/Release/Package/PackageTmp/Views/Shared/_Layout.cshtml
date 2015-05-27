@@ -1,0 +1,264 @@
+﻿@using System.Collections
+@{
+    var table = ViewBag.Hashtable as Hashtable;
+    var modules = ViewBag.ModuleList as IEnumerable<ModuleEntry>;
+    var list = modules.Where(x => x.ParentId == 0 && x.WebsiteFrontMenu).ToList();
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/styles/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/styles/css.css">
+    <script type="text/javascript" src="~/Content/scripts/jquery.js"></script>
+    <script type="text/javascript" src="~/Content/scripts/bootstrap.js"></script>
+   
+
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    <!--start header-->
+    <header class="header">
+        <nav class="navbar navbar-default navbar-custom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="header-logo">
+                                <label class="cmpname">某某某公司 @ViewBag.Logo</label>
+                            </div>
+                        </div>
+                    </div>
+                    @*<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="header-profile">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" onclick="setHomepage('http://www.baidu.com/')">设为首页</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" onclick="addBookmark('必须是字符串','http://www.baidu.com/')">加入收藏</a>
+                                </li>
+                                <li>
+                                    <a href="~/About/Index?ModuleId=14&ParentId=11">联系我们</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>*@
+                </div>
+            </div>
+        </nav>
+
+        @*<div class="container">
+                <nav class="navbar navbar-default" style="background-color:transparent;">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="header-logo">
+                                    <label class="cmpname">某某某公司 @ViewBag.Logo</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="header-profile">
+                                <ul>
+                                    <li>
+                                        <a href="#">设为首页</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">加入收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="~/About/Index?ModuleId=14&ParentId=11">联系我们</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>*@
+        <div class="navbar-menu-box">
+            <div class="container">
+                @Html.Action("Menu", "Home")
+            </div>
+        </div>
+    </header>
+    <!--end header-->
+    <!-- start slider -->
+    <div class="slider">
+        <div class="container">
+            <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        var key = "banner" + i;
+                        if (table.ContainsKey(key))
+                        {
+                            var value = table[key];
+                            if (value != null && !string.IsNullOrEmpty(value.ToString()))
+                            {
+                                if (i == 1)
+                                {
+                                    <li data-target="#carousel-slider" data-slide-to="@i" class="active"></li>
+                                }
+                                else
+                                {
+                                    <li data-target="#carousel-slider" data-slide-to="@i"></li>
+                                }
+                            }
+                        }
+                    }
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        var key = "banner" + i;
+                        if (table.ContainsKey(key))
+                        {
+                            var value = table[key];
+                            if (value != null && !string.IsNullOrEmpty(value.ToString()))
+                            {
+                                if (i == 1)
+                                {
+                                    <div class="item active">
+                                        <img src="@Url.Content(value.ToString())">
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="item">
+                                        <img src="@Url.Content(value.ToString())">
+                                    </div>
+                                }
+                            }
+                        }
+                    }
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-slider" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-slider" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end slider -->
+
+
+    <div class="container">
+        <div class="wrapper margin-top-10">
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer>
+        @*<div class="footer-nav">
+                <div class="container">
+                    <ul class="row footer-contact">
+                        <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <i class="fa fa-phone-square"></i>
+                            <a href="#">电话:0755-26745568(60线)</a>
+                        </li>
+                        <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <i class="fa fa-shopping-cart"></i>
+                            <a href="#">销售热线:0755-26745568(60线)</a>
+                        </li>
+                        <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <i class="fa fa-headphones"></i>
+                            <a href="#">服务热线:0755-26745568(60线)</a>
+                        </li>
+                        <li class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                            <i class="fa fa-fax"></i>
+                            <a href="#">传真:0755-26745568(60线)</a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <ul class="footer-nav-list">
+                            <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <h3><a href="#">关于我们</a></h3>
+                                <p><a href="#">公司简介</a></p>
+                                <p><a href="#">资源证书</a></p>
+                                <p><a href="#">新闻动态</a></p>
+                                <p><a href="#">联系我们</a></p>
+                            </li>
+
+                            <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <h3><a href="#">产品中心</a></h3>
+                                <p><a href="#">触摸屏</a></p>
+                                <p><a href="#">广告机</a></p>
+                                <p><a href="#">一体机</a></p>
+                                <p><a href="#">微信打印机</a></p>
+                                <p><a href="#">白板软件</a></p>
+                                <p><a href="#">电子白板</a></p>
+                                <p><a href="#">相关集成方案</a></p>
+                            </li>
+
+                            <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <h3><a href="#">服务支持</a></h3>
+                                <p><a href="#">客户服务</a></p>
+                                <p><a href="#">常见问题</a></p>
+                                <p><a href="#">解决方案</a></p>
+                                <p><a href="#">下载中心</a></p>
+                            </li>
+                            <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                <h3><a href="#">官方链接</a></h3>
+                                <p><a href="#">官方商城</a></p>
+                                <p><a href="#">官方淘宝</a></p>
+                                <p><a href="#">云服务平台</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>*@
+        <div class="footer">
+            <div class="container">
+                <div class="fm">
+                    @for (int i = 0; i < list.Count; i++)
+                    {
+                        var url = list[i].FrontUrl;
+                        if (!string.IsNullOrEmpty(url))
+                        {
+                            url = Url.Content(url);
+                        }
+                        if (i == list.Count - 1)
+                        {
+                            <a href="@url">@list[i].DisplayName</a>
+                        }
+                        else
+                        {
+                            <a href="@url">@list[i].DisplayName</a>
+                            <span>|</span>
+                        }
+                    }
+
+                </div>
+                <p class="copyright">版权所有 © 2006-@DateTime.Now.Year @table["company_name"] 备案号：@table["icp"]</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

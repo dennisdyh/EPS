@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+
+    var parent = ViewBag.Parent as ModuleEntry;
+    var module = ViewBag.Module as ModuleEntry;
+}
+
+<!--begin nav position-->
+<div class="nav-position-box">
+    <ol class="breadcrumb">
+        <li>
+            <i class="fa fa-hand-o-right"></i><a href="~/Home/Index">首页</a>
+        </li>
+        @if (parent != null)
+        {
+            string strUrl = "#";
+            if (module != null)
+            {
+                strUrl = string.IsNullOrEmpty(module.FrontUrl) ? "#" : Url.Content(module.FrontUrl);
+                if (!strUrl.Contains("?"))
+                {
+                    strUrl += "?ParentId=" + module.ParentId + "&ModuleId=" + module.ModuleId;
+                }
+            }
+            <li><a href="@strUrl">@parent.DisplayName</a></li>
+        }
+       @if (module != null)
+       {
+            <li class="active">@module.DisplayName</li>
+       }
+    </ol>
+</div>
+<!--end nav position-->	

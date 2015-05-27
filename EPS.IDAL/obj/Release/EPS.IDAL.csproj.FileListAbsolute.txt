@@ -1,0 +1,17 @@
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\EPS.IDAL.dll
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\EPS.IDAL.pdb
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\EPS.Models.dll
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\Framework.dll
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\Framework.Core.dll
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\Autofac.dll
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\Newtonsoft.Json.dll
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\Autofac.Integration.Mvc.dll
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\Framework.pdb
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\EPS.Models.pdb
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\Framework.Core.pdb
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\Autofac.xml
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\Newtonsoft.Json.xml
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Release\Autofac.Integration.Mvc.xml
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\obj\Release\EPS.IDAL.csprojResolveAssemblyReference.cache
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\obj\Release\EPS.IDAL.dll
+D:\Work\Github\EPS PostgreSQL\EPS.IDAL\obj\Release\EPS.IDAL.pdb

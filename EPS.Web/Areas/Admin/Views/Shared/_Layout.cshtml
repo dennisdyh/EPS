@@ -1,0 +1,229 @@
+﻿@using System.Collections
+@using System.Text
+@using Framework.Core
+@using Framework.Core.Localized
+@using Framework.Web.Utils
+@{
+    var dic = new Dictionary<string, string>
+            {
+                {"SelectToEdit", Localization.GetLang("Select record to be edited.")},
+                {"SelectOneToEdit", Localization.GetLang("Please select a record to edit.")},
+                {"SelectToDelete", Localization.GetLang("Select record(s) to be deleted.")},
+                {"SureDelete", Localization.GetLang("Are you sure you want to delete the record(s)?")},
+                {"Confirmation", Localization.GetLang("Confirmation")},
+                {"Information", Localization.GetLang("Information")},
+            };
+    var table = ViewBag.Dictionary as Dictionary<string, string>;
+    //var lang = Utility.Language;
+    //dic.Add("Language", lang.Substring(0, 2));
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/styles/css")
+    @Styles.Render("~/Content/jqui")
+    @Styles.Render("~/Content/ueditor")
+    @Styles.Render("~/Content/styles/st")
+    @RenderSection("styles", false)
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bs")
+    @Scripts.Render("~/bundles/jqui")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/ueditor")
+    @Scripts.Render("~/bundles/jqplugins")
+    @RenderSection("scripts", required: false)
+</head>
+    <body>
+        <div id="LocalizationLang" style="display:none;">
+            @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(dic))
+        </div>
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo navbar-header pull-left">
+                    <a href="#" class="switcher"><i class="fa fa-th-list"></i></a>
+                    <a href="#"><i class="fa fa-users"></i><span>文章发布管理系统</span></a>
+                </div>
+                <div class="navbr-buttons navbar-header pull-right">
+                    <ul class="ace-nav">
+                        @*<li class="bg-danger ui top left pointing dropdown welcome">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-tasks"></i>
+                                <span class="badge badge-success">4</span>
+                            </a>
+                            <ul class="ddl dropdown-menu-left dropdown-navbar dropdown-menu dropdown-caret dropdown-close" role="menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-cog"></i>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="profile.html">
+                                        <i class="fa fa-user"></i>
+                                        <span>Profile</span>
+                                    </a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-power-off"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="bg-primary ui top left pointing dropdown welcome">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell"></i>
+                                <span class="badge badge-info">4</span>
+                            </a>
+                            <ul class="ddl dropdown-menu-left dropdown-navbar dropdown-menu dropdown-caret dropdown-close" role="menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-cog"></i>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="profile.html">
+                                        <i class="fa fa-user"></i>
+                                        <span>Profile</span>
+                                    </a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-power-off"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="bg-success">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope"></i>
+                                <span class="badge badge-primary">4</span>
+                            </a>
+                            <ul class="ddl dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close" role="menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-cog"></i>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="~/Admin/Users/Profile" class="fancybox fancybox.ajax">
+                                        <i class="icon-user"></i>
+                                        <span>Profile</span>
+                                    </a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-power-off"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>*@
+                        <li class="bg-info ui top right pointing dropdown welcome">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i>
+                                <span class="user-info">
+                                    <small>@Html.Lang("Welcome,")</small>@Utility.CurrentLoginModel.UserName
+                                </span>
+                                <i class="icon-caret-down"></i>
+                            </a>
+                            <ul class="ddl dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close" role="menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-cog"></i>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="~/Admin/Users/Profile">
+                                        <i class="icon-user"></i>
+                                        <span>Profile</span>
+                                    </a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="~/Users/Logout">
+                                        <i class="icon-power-off"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div class="primary-content">
+                @Html.Action("Carte", "Modules")
+                <section id="main-container">
+                    @RenderBody()
+                </section>
+                <footer class="footer">
+                    <p>版权所有 © 2006-@DateTime.Now.Year @table["company_name"] 备案号：@table["icp"]</p>
+                </footer>
+            </div>
+        
+        </div>
+
+        @if (DataCast.Get<bool>(ViewBag.HasMessage))
+        {
+            <div class="message-box">
+                <div class="success @TempData["MessageType"]">
+                    @Html.ValidationSummary("", new { @class = "summary" })
+                </div>
+            </div>
+        }
+    
+        <div id="dlgload" title="Loading" style="display:none;">
+            <div class="ui-dialog-loading">
+                <p style="font-size:40px;">
+                    <i class="fa fa-spinner fa-spin"></i>
+                </p>
+                <p style="margin-top:10px;">
+                    <strong>Loading...</strong>
+                </p>
+            </div>
+        </div>
+
+        <div id="dlgmsg" title="Information" style="display:none;">
+            <div class="ul-table" style="margin:15px 0 10px 0;">
+                <ul class="ul-table-row">
+                    <li style="border:none;width:20%;padding-left:20px;"><i class="fa fa-info-circle" style="font-size: 30px;"></i></li>
+                    <li style="border:none;width:80%;padding:0 10px 0 10px;">
+                        <p id="dlgmsg-text"> </p>
+                    </li>
+                </ul>
+            </div>        
+        </div>
+
+    
+
+        @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        RenderSection("scripts", required: false)*@
+    </body>
+</html>

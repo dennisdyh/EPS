@@ -1,0 +1,4 @@
+D:\Work\Github\EPS\EPS.Core\bin\Debug\EPS.Core.dll
+D:\Work\Github\EPS\EPS.Core\bin\Debug\EPS.Core.pdb
+D:\Work\Github\EPS\EPS.Core\obj\Debug\EPS.Core.dll
+D:\Work\Github\EPS\EPS.Core\obj\Debug\EPS.Core.pdb

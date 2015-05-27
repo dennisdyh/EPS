@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ModuleEntry>
+@{
+    Layout = null;
+}
+<div class="box-content">
+    <div class="bar-title bar-title-type">
+        <i class="fa fa-list"></i>
+        <span class="bar-name">@ViewBag.ParentName</span>
+    </div>
+    <nav class="navbar slider-navbar">
+        <ul class="nav nav-stacked">
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    var url = string.IsNullOrEmpty(item.FrontUrl) ? "#" : Url.Content(item.FrontUrl) + "?ModuleId=" + item.ModuleId + "&ParentId=" + item.ParentId;
+                    string clsName = "";
+                    if (ViewBag.ModuleId == item.ModuleId)
+                    {
+                        clsName = "active";
+                    }
+                    <li>
+                        <a href="@url" class="@clsName"><i class="fa fa-caret-right"></i>@item.DisplayName</a>
+                    </li>
+                }
+            }
+            else
+            {
+                <li>
+                    <a href="#">没有记录</a>
+                </li>
+            }
+           
+        </ul>
+    </nav>
+</div>

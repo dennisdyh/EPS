@@ -1,0 +1,44 @@
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Framework.Web.dll
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Framework.Web.pdb
+D:\Work\Github\EPS\Framework.Web\bin\Debug\EPS.Models.dll
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Framework.dll
+D:\Work\Github\EPS\Framework.Web\bin\Debug\EPS.Models.pdb
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Newtonsoft.Json.xml
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Framework.pdb
+D:\Work\Github\EPS\Framework.Web\obj\Debug\Framework.Web.csprojResolveAssemblyReference.cache
+D:\Work\Github\EPS\Framework.Web\obj\Debug\Framework.Web.dll
+D:\Work\Github\EPS\Framework.Web\obj\Debug\Framework.Web.pdb
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Framework.Core.dll
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Framework.Core.pdb
+D:\Work\Github\EPS\Framework.Web\bin\Debug\EPS.IDAL.dll
+D:\Work\Github\EPS\Framework.Web\bin\Debug\EPS.IDAL.pdb
+D:\Work\Github\EPS\Framework.Web\bin\Debug\EPS.DAL.dll
+D:\Work\Github\EPS\Framework.Web\bin\Debug\EPS.DAL.pdb
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Framework.Web.dll.config
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Autofac.dll
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Autofac.xml
+D:\Work\Github\EPS\Framework.Web\bin\Debug\Autofac.Integration.Mvc.xml
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Framework.Web.dll.config
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Framework.Web.dll
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Framework.Web.pdb
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Autofac.dll
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\EPS.DAL.dll
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\EPS.IDAL.dll
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\EPS.Models.dll
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Framework.Core.dll
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Framework.dll
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Framework.Core.pdb
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\EPS.DAL.pdb
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Framework.pdb
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\EPS.IDAL.pdb
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\EPS.Models.pdb
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Autofac.xml
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Autofac.Integration.Mvc.xml
+D:\Work\Github\EPS PostgreSQL\Framework.Web\bin\Debug\Newtonsoft.Json.xml
+D:\Work\Github\EPS PostgreSQL\Framework.Web\obj\Debug\Framework.Web.csprojResolveAssemblyReference.cache
+D:\Work\Github\EPS PostgreSQL\Framework.Web\obj\Debug\Framework.Web.dll
+D:\Work\Github\EPS PostgreSQL\Framework.Web\obj\Debug\Framework.Web.pdb

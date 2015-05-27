@@ -1,0 +1,138 @@
+﻿@{
+    var companyNews = ViewBag.CompanyNews as IEnumerable<NewsEntry>;
+    var cases = ViewBag.Cases as IEnumerable<dynamic>;
+    var products = ViewBag.Products as IEnumerable<dynamic>;
+}
+@section scripts{
+    <script type="text/javascript" src="~/Content/scripts/jquery.scrollbox.js"></script>
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="hot-sales">
+            <div class="bar-title bar-title-bg1">
+                <i class="fa fa-image"></i>
+                <span class="bar-name">热销产品</span>
+                <span class="bar-more"><i class="fa fa-angle-double-right"></i><a href="@Url.Content("~/Products/Index?ParentId=21")">more</a></span>
+            </div>
+            <div class="product-box">
+                <div class="row">
+                    @if (products != null)
+                    {
+                        foreach (var item in products)
+                        {
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="thumbnail thumb-prod-custom">
+                                    <a href="~/Products/Details/@item.NewsId?ModuleId=@item.ModuleId&ParentId=@item.ParentId" target="_blank">
+                                        <img data-src="holder.js/350x350" src="@Url.Content(item.Thumbnail)">
+                                        <p class="caption-title">
+                                            @item.Description
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row row-top-margin">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="box-content" id="introduce">
+            <div class="bar-title">
+                <i class="fa fa-tasks"></i>
+                <span class="bar-name">公司简介  @ViewBag.BasicKey </span>
+                <span class="bar-more"><i class="fa fa-angle-double-right"></i><a href="@Url.Content("~/About/Index?ParentId=11&ModuleId=12")">more</a></span>
+            </div>
+            <div class="content">
+                @Html.Raw((ViewBag.Introduce as string))
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="box-content" id="news">
+            <div class="bar-title">
+                <i class="fa fa-newspaper-o"></i>
+                <span class="bar-name">公司新闻</span>
+                <span class="bar-more"><i class="fa fa-angle-double-right"></i><a href="@Url.Content("~/News/Index?ParentId=15")" >more</a></span>
+            </div>
+            <ul class="list-group list-group-custom">
+                @foreach (var item in companyNews)
+                {
+                    var time = item.CreatedTime.HasValue ? item.CreatedTime.Value.ToString("yyyy-MM-dd") : DateTime.Now.ToString("yyyy-MM-dd");
+                    <li class="list-group-item list-group-item-custom">
+                        <a href="~/News/Details/@item.NewsId?ModuleId=@item.ModuleId&ParentId=@item.ParentId">
+                            <i class="fa fa-angle-double-right"></i>@item.Title<span class="news-time">[@time]</span>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row row-top-margin">
+    <div class="col-lg-12">
+        <div class="box-content">
+            <div class="bar-title">
+                <i class="fa fa-video-camera"></i>
+                <span class="bar-name">经典案例</span>
+                <span class="bar-more"><i class="fa fa-angle-double-right"></i><a href="@Url.Content("~/Cases/Index?ParentId=18")">more</a></span>
+            </div>
+            <div class="cases-box">
+                <ul class="row">
+                    @if (cases != null)
+                    {
+                        foreach (var item in cases)
+                        {
+                            <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="thumbnail thumb-case">
+                                    <a href="~/Cases/Details/@item.NewsId?ModuleId=@item.ModuleId&ParentId=@item.ParentId" target="_blank">
+                                        <img data-src="holder.js/300x300" src="@Url.Content(item.Thumbnail)">
+                                        <p class="caption-title">@item.Description</p>
+                                    </a>
+                                </div>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(function () {
+
+        $('.cases-box').scrollbox({
+            switchItems: 3,
+            distance: 'auto',
+            windowResize: function (config) {
+                if ($(window).width() > 768) {
+                    config.switchItems = 3;
+                } else {
+                    config.switchItems = 1;
+                }
+            }
+        });
+
+        function resizeDesign() {
+            var height = $(".cases-box .thumbnail:eq(0)").height();
+            console.log(height);
+            $(".cases-box").height(height * 2 + 10);
+        }
+
+        $(window).on("resize", function () {
+            resizeDesign();
+        });
+
+        setTimeout(function () {
+            resizeDesign();
+        }, 200);
+
+    });
+</script>
