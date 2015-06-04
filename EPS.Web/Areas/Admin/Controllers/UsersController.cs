@@ -503,6 +503,8 @@ namespace EPS.Web.Areas.Admin.Controllers
 
                 info.Language = collection["Language"];
                 Utility.Language = info.Language;
+
+                Utility.Operate(this, Operations.Update, () => _user.Update(info), info.UserName);
             }
             else
             {

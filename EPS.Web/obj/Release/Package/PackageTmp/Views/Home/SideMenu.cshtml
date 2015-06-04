@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<ModuleEntry>
 @{
     Layout = null;
+    
 }
 <div class="box-content">
     <div class="bar-title bar-title-type">
@@ -18,6 +19,8 @@
                     if (ViewBag.ModuleId == item.ModuleId)
                     {
                         clsName = "active";
+                        
+
                     }
                     <li>
                         <a href="@url" class="@clsName"><i class="fa fa-caret-right"></i>@item.DisplayName</a>

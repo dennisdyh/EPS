@@ -32,3 +32,20 @@ D:\Work\Github\EPS PostgreSQL\EPS.IDAL\bin\Debug\Autofac.Integration.Mvc.xml
 D:\Work\Github\EPS PostgreSQL\EPS.IDAL\obj\Debug\EPS.IDAL.csprojResolveAssemblyReference.cache
 D:\Work\Github\EPS PostgreSQL\EPS.IDAL\obj\Debug\EPS.IDAL.dll
 D:\Work\Github\EPS PostgreSQL\EPS.IDAL\obj\Debug\EPS.IDAL.pdb
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\EPS.IDAL.dll
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\EPS.IDAL.pdb
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\EPS.Models.dll
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\Framework.dll
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\Framework.Core.dll
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\Autofac.dll
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\Framework.pdb
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\EPS.Models.pdb
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\Framework.Core.pdb
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\Autofac.xml
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\Newtonsoft.Json.xml
+D:\Work\Gitspace\EPS\EPS.IDAL\bin\Debug\Autofac.Integration.Mvc.xml
+D:\Work\Gitspace\EPS\EPS.IDAL\obj\Debug\EPS.IDAL.csprojResolveAssemblyReference.cache
+D:\Work\Gitspace\EPS\EPS.IDAL\obj\Debug\EPS.IDAL.dll
+D:\Work\Gitspace\EPS\EPS.IDAL\obj\Debug\EPS.IDAL.pdb

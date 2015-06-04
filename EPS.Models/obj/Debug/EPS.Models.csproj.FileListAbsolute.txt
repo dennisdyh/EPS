@@ -28,3 +28,18 @@ D:\Work\Github\EPS PostgreSQL\EPS.Models\bin\Debug\Autofac.Integration.Mvc.xml
 D:\Work\Github\EPS PostgreSQL\EPS.Models\obj\Debug\EPS.Models.csprojResolveAssemblyReference.cache
 D:\Work\Github\EPS PostgreSQL\EPS.Models\obj\Debug\EPS.Models.dll
 D:\Work\Github\EPS PostgreSQL\EPS.Models\obj\Debug\EPS.Models.pdb
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\EPS.Models.dll
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\EPS.Models.pdb
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\Framework.Core.dll
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\Framework.dll
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\Autofac.dll
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\Framework.Core.pdb
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\Framework.pdb
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\Autofac.xml
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\Newtonsoft.Json.xml
+D:\Work\Gitspace\EPS\EPS.Models\bin\Debug\Autofac.Integration.Mvc.xml
+D:\Work\Gitspace\EPS\EPS.Models\obj\Debug\EPS.Models.csprojResolveAssemblyReference.cache
+D:\Work\Gitspace\EPS\EPS.Models\obj\Debug\EPS.Models.dll
+D:\Work\Gitspace\EPS\EPS.Models\obj\Debug\EPS.Models.pdb

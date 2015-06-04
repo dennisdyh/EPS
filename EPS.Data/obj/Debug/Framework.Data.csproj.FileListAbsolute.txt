@@ -7,3 +7,7 @@ D:\Work\Github\EPS PostgreSQL\EPS.Data\bin\Debug\Framework.dll
 D:\Work\Github\EPS PostgreSQL\EPS.Data\bin\Debug\Framework.pdb
 D:\Work\Github\EPS PostgreSQL\EPS.Data\obj\Debug\Framework.dll
 D:\Work\Github\EPS PostgreSQL\EPS.Data\obj\Debug\Framework.pdb
+D:\Work\Gitspace\EPS\EPS.Data\bin\Debug\Framework.dll
+D:\Work\Gitspace\EPS\EPS.Data\bin\Debug\Framework.pdb
+D:\Work\Gitspace\EPS\EPS.Data\obj\Debug\Framework.dll
+D:\Work\Gitspace\EPS\EPS.Data\obj\Debug\Framework.pdb

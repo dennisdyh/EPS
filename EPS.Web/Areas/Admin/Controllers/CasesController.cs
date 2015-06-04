@@ -198,8 +198,9 @@ namespace EPS.Web.Areas.Admin.Controllers
             {
                 string topDir = collection["folder"];  // 获取uploadify的folder配置，在此示例中，客户端配置了上传到 Files/ 文件夹
                 // 检测并创建目录:当月上传的文件放到以当月命名的文件夹中，例如2011年11月的文件放到网站根目录下的 /Files/201111 里面
-                string dateFolder = Utility.GetUploadBasePath(topDir) + "\\" + DateTime.Now.Date.ToString("yyyyMM");
-                string thumbnailFolder = dateFolder + "\\thumbnail";
+                
+                string dateFolder = Utility.GetUploadBasePath(topDir) + @"/" + DateTime.Now.Date.ToString("yyyyMM");
+                string thumbnailFolder = dateFolder + @"/thumbnail";
                 if (!Directory.Exists(dateFolder))  // 检测是否存在磁盘目录
                 {
                     Directory.CreateDirectory(dateFolder);  // 不存在的情况下，创建这个文件目录 例如 C:/wwwroot/Files/201111/
@@ -212,7 +213,7 @@ namespace EPS.Web.Areas.Admin.Controllers
                 // 使用Guid命名文件，确保每次文件名不会重复
                 string guidFileName = Guid.NewGuid() + Path.GetExtension(oFile.FileName).ToLower();
                 // 保存文件，注意这个可是完整路径，例如C:/wwwroot/Files/201111/92b2ce5b-88af-405e-8262-d04b552f48cf.jpg
-                var originalPath = dateFolder + "\\" + guidFileName;
+                var originalPath = dateFolder + @"/" + guidFileName;
                 oFile.SaveAs(originalPath);
 
                 var original = new DirectoryInfo(originalPath).FullName.Replace(AppDomain.CurrentDomain.BaseDirectory, "");
@@ -221,7 +222,7 @@ namespace EPS.Web.Areas.Admin.Controllers
                 //////// TODO 在此，您可以添加自己的业务逻辑，比如保存这个文件信息到数据库
                 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-                var thumbnailPath = thumbnailFolder + "\\" + guidFileName;
+                var thumbnailPath = thumbnailFolder + @"/" + guidFileName;
 
                 using (var file = System.IO.File.OpenRead(originalPath))
                 {

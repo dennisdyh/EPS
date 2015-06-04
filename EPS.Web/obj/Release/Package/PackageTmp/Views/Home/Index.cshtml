@@ -2,6 +2,7 @@
     var companyNews = ViewBag.CompanyNews as IEnumerable<NewsEntry>;
     var cases = ViewBag.Cases as IEnumerable<dynamic>;
     var products = ViewBag.Products as IEnumerable<dynamic>;
+    ViewBag.Title = "首页";
 }
 @section scripts{
     <script type="text/javascript" src="~/Content/scripts/jquery.scrollbox.js"></script>
@@ -13,7 +14,7 @@
             <div class="bar-title bar-title-bg1">
                 <i class="fa fa-image"></i>
                 <span class="bar-name">热销产品</span>
-                <span class="bar-more"><i class="fa fa-angle-double-right"></i><a href="@Url.Content("~/Products/Index?ParentId=21")">more</a></span>
+                <span class="bar-more"><i class="fa fa-angle-double-right"></i><a href="@Url.Content("~/Products/Index?ParentId=11")">more</a></span>
             </div>
             <div class="product-box">
                 <div class="row">
@@ -23,10 +24,10 @@
                         {
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                 <div class="thumbnail thumb-prod-custom">
-                                    <a href="~/Products/Details/@item.NewsId?ModuleId=@item.ModuleId&ParentId=@item.ParentId" target="_blank">
-                                        <img data-src="holder.js/350x350" src="@Url.Content(item.Thumbnail)">
+                                    <a href="~/Products/Details/@item.newsid?ModuleId=@item.moduleid&ParentId=@item.parentid" target="_blank">
+                                        <img data-src="holder.js/350x350" src="@Url.Content(item.thumbnail)">
                                         <p class="caption-title">
-                                            @item.Description
+                                            @item.description
                                         </p>
                                     </a>
                                 </div>
@@ -80,7 +81,7 @@
             <div class="bar-title">
                 <i class="fa fa-video-camera"></i>
                 <span class="bar-name">经典案例</span>
-                <span class="bar-more"><i class="fa fa-angle-double-right"></i><a href="@Url.Content("~/Cases/Index?ParentId=18")">more</a></span>
+                <span class="bar-more"><i class="fa fa-angle-double-right"></i><a href="@Url.Content("~/Cases/Index?ParentId=10")">more</a></span>
             </div>
             <div class="cases-box">
                 <ul class="row">
@@ -90,9 +91,9 @@
                         {
                             <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                                 <div class="thumbnail thumb-case">
-                                    <a href="~/Cases/Details/@item.NewsId?ModuleId=@item.ModuleId&ParentId=@item.ParentId" target="_blank">
-                                        <img data-src="holder.js/300x300" src="@Url.Content(item.Thumbnail)">
-                                        <p class="caption-title">@item.Description</p>
+                                    <a href="~/Cases/Details/@item.newsid?ModuleId=@item.moduleid&ParentId=@item.parentid" target="_blank">
+                                        <img data-src="holder.js/300x300" src="@Url.Content(item.thumbnail)">
+                                        <p class="caption-title">@item.description</p>
                                     </a>
                                 </div>
                             </li>

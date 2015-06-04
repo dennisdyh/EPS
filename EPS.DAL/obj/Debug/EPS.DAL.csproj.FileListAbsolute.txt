@@ -45,3 +45,31 @@ D:\Work\Github\EPS PostgreSQL\EPS.DAL\bin\Debug\zh-CN\Npgsql.resources.dll
 D:\Work\Github\EPS PostgreSQL\EPS.DAL\obj\Debug\EPS.DAL.csprojResolveAssemblyReference.cache
 D:\Work\Github\EPS PostgreSQL\EPS.DAL\obj\Debug\EPS.DAL.dll
 D:\Work\Github\EPS PostgreSQL\EPS.DAL\obj\Debug\EPS.DAL.pdb
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\EPS.DAL.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\EPS.DAL.pdb
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\EPS.IDAL.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\EPS.Models.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Framework.Core.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Framework.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Mono.Security.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Npgsql.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Autofac.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Framework.Core.pdb
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Framework.pdb
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\EPS.IDAL.pdb
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\EPS.Models.pdb
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Npgsql.xml
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Autofac.xml
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\Autofac.Integration.Mvc.xml
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\de\Npgsql.resources.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\es\Npgsql.resources.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\fi\Npgsql.resources.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\fr\Npgsql.resources.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\ja\Npgsql.resources.dll
+D:\Work\Gitspace\EPS\EPS.DAL\bin\Debug\zh-CN\Npgsql.resources.dll
+D:\Work\Gitspace\EPS\EPS.DAL\obj\Debug\EPS.DAL.csprojResolveAssemblyReference.cache
+D:\Work\Gitspace\EPS\EPS.DAL\obj\Debug\EPS.DAL.dll
+D:\Work\Gitspace\EPS\EPS.DAL\obj\Debug\EPS.DAL.pdb

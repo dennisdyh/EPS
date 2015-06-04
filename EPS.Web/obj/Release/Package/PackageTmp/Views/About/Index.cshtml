@@ -8,7 +8,7 @@
         @Html.Action("Breadcrumb", "Home")
         <div class="news_main">
             <div class="news_content">
-                @Html.Raw(Model.Content)
+                @Html.Raw( Model == null ? "" : Model.Content)
             </div>
         </div>
     </div>
